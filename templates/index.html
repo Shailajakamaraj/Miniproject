@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Meeting Minutes Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 AI Meeting Minutes Generator</h1>
+        <input type="file" id="audioFile">
+        <button id="generateBtn">Generate Minutes</button>
+
+        <div id="output">
+            <h2>📜 Transcript:</h2>
+            <p id="transcript"></p>
+
+            <h2>📝 Agenda:</h2>
+            <p id="agenda"></p>
+
+            <h2>Speaker Notes:</h2>
+            <p id="speaker_notes"></p>
+
+            <h2>Summary / Action Items:</h2>
+            <p id="summary"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
